@@ -1,0 +1,40 @@
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    box-shadow: 6px 6px 3px #aaaaaa;
+    border-radius: 6px;
+    background: linear-gradient(to top left, #bbbbbb, #ffffff);
+}
+
+.status{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.on {
+    composes: status;
+    background-color: #00ff00;
+}
+
+.off {
+    composes: status;
+    background-color: #ff0000;
+}
+
+.avatar {
+    width: 100px;
+    height: auto;
+    display: block;
+    padding: 5px;
+    border: 3px solid #00cfff;
+    border-radius: 6px;
+}
+
+.name {
+    margin: 10px;
+    font-size: 32px;
+}
